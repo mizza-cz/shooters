@@ -2,12 +2,39 @@
 @import 'global';
 @import 'header';
 
-.bg-uvod {
-  background-image: url('../images/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+.rozcestnik {
   height: 100vh;
   width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  &--muzi,
+  &--zeny {
+    height: 70vh;
+    img {
+      object-fit: cover !important;
+    }
+  }
+  &--logo {
+    padding: 0 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  a {
+    max-width: 33.333%;
+    flex: 0 0 33.333%;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
 }
-
 @import 'media';

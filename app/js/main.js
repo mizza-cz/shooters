@@ -1,17 +1,23 @@
-$('.nav a').on('click', function() {
 
-   let href = $(this).attr('href');
-
-   $('html, body').animate({
-       scrollTop: $(href).offset().top
-   }, {
-       duration: 370,   // по умолчанию «400» 
-       easing: "linear" // по умолчанию «swing» 
-   });
-
-   return false;
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
 });
 
 $('.mob-menu').on('click', function () {
     $('.nav').slideToggle();
   });
+
+let menu = document.getElementById('header')
+let section = document.getElementById('muzi')
+window.onscroll = function(){
+    if(window.pageYOffset >= section.offsetTop){
+        menu.classList.add('sticky')
+    }
+    if(window.pageYOffset < section.offsetTop){
+        menu.classList.remove('sticky')
+    }
+}

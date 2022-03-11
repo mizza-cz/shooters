@@ -1,9 +1,15 @@
 .header {
   background-color: $black;
   height: 64px;
-  position: fixed;
+  // position: fixed;
   width: 100%;
   z-index: 999;
+  top: 0;
+  display: none;
+  &.sticky {
+    position: fixed;
+    display: block;
+  }
   &__inner {
     padding: 0 80px;
     display: flex;
