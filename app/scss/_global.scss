@@ -33,7 +33,8 @@ p {
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  // font-family: 'Titillium Web', sans-serif;
+  font-family: 'hudson-regular', sans-serif;
 }
 
 .container {
@@ -52,6 +53,11 @@ h2 {
   padding: 120px 0;
   background-color: $black;
   color: #fff;
+  &__posts {
+    .posts {
+      margin-bottom: 80px;
+    }
+  }
   &__table {
     padding: 12px 0;
     td {
@@ -78,7 +84,7 @@ h2 {
     margin-left: -6px;
     margin-right: -6px;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     h4 {
       font-weight: 700;
       font-size: 20px;
@@ -508,10 +514,22 @@ h2 {
   }
   &__info {
     padding: 0 60px;
-    max-width: 646px;
+    display: flex;
+    justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
+    &-box {
+      max-width: 50%;
+      flex: 0 0 50%;
+      padding: 0 16px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px;
+    }
     &-box:first-child {
-      margin-bottom: 80px;
+      // margin-bottom: 80px;
     }
     p {
       font-weight: normal;

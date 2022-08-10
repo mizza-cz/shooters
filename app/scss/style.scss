@@ -13,8 +13,17 @@
   &--muzi,
   &--zeny {
     height: 70vh;
+    max-width: 40%;
     img {
       object-fit: cover !important;
+    }
+  }
+  a {
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
     }
   }
   &--logo {
@@ -25,16 +34,25 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+    width: 380px;
   }
-  a {
-    max-width: 33.333%;
-    flex: 0 0 33.333%;
-    img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: contain;
-    }
+}
+@media (max-width: 1400px) {
+  .rozcestnik--logo {
+    width: 320px;
+  }
+}
+@media (max-width: 1240px) {
+  .rozcestnik--logo {
+    top: 120px;
+  }
+  .rozcestnik--muzi,
+  .rozcestnik--zeny {
+    max-width: 50%;
+  }
+  .rozcestnik--muzi img,
+  .rozcestnik--zeny img {
+    object-fit: contain !important;
   }
 }
 @import 'media';
