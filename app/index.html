@@ -23,17 +23,40 @@
 
   <body>
     <main>
-      <div id="top" class="rozcestnik">
-        <a class="rozcestnik--muzi aos-init" data-aos="fade-right" href="#mladez">
-          <img src="images/hrac-m3.png" alt="" />
-        </a>
-        <a class="rozcestnik--logo aos-init" data-aos="zoom-in" href="#muzi">
-          <img src="images/hrac-m2.png" alt="" />
-        </a>
-        <a class="rozcestnik--zeny aos-init" data-aos="fade-left" href="#zeny">
-          <img src="images/hracka-m.png" alt="" />
-        </a>
+      <div class="video_wrapper">
+        <div id="top" class="rozcestnik">
+          <a
+            data-aos-duration="3000"
+            class="rozcestnik--left aos-init"
+            data-aos="fade-right"
+            href="#mladez"
+          >
+            <img src="images/hrac-m3.png" alt="" />
+          </a>
+          <a
+            data-aos-duration="1000"
+            class="rozcestnik--midle aos-init"
+            data-aos="zoom-in"
+            href="#muzi"
+          >
+            <img src="images/hrac-m2.png" alt="" />
+          </a>
+          <a
+            data-aos-duration="3000"
+            class="rozcestnik--right aos-init"
+            data-aos="fade-left"
+            href="#zeny"
+          >
+            <img src="images/hracka-m.png" alt="" />
+          </a>
+        </div>
+        <div class="hp_video">
+          <video class="jquery-background-video" autoplay muted loop playsinline>
+            <source src="/video/video.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
+
       <header id="header" class="header">
         <div class="header__inner">
           <a class="header__logo" href="index.html">

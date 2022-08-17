@@ -3,7 +3,6 @@
 @import 'header';
 @import 'fonts';
 .rozcestnik {
-  // height: 100vh;
   padding-top: 80px;
   width: 100%;
   max-width: 1920px;
@@ -12,17 +11,21 @@
   align-items: flex-end;
   position: relative;
   margin: 0 auto;
-  &--muzi,
-  &--zeny {
-    // height: 70vh;
-    // max-width: 40%;
-    img {
-      // object-fit: cover !important;
-    }
+  z-index: 33;
+  &--left {
+    max-width: 28%;
+    flex: 0 0 28%;
+  }
+
+  &--midle {
+    max-width: 34%;
+    flex: 0 0 34%;
+  }
+  &--right {
+    max-width: 38%;
+    flex: 0 0 38%;
   }
   a {
-    max-width: 33.333%;
-    flex: 0 0 33.333%;
     padding: 0 10px;
     display: block;
     img {
@@ -32,16 +35,28 @@
       object-fit: contain;
     }
   }
-  // &--logo {
-  //   padding: 0 40px;
-  //   position: absolute;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   left: 0;
-  //   right: 0;
-  //   margin: 0 auto;
-  //   width: 380px;
-  // }
+}
+
+.video_wrapper {
+  position: relative;
+}
+.hp_video {
+  z-index: 0;
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  margin: 0 auto;
+}
+.jquery-background-video {
+  object-fit: unset;
+  height: unset;
+  max-width: none;
+  width: 100%;
 }
 @media (max-width: 1400px) {
   .rozcestnik--logo {
