@@ -33,8 +33,9 @@ p {
 }
 
 body {
-  // font-family: 'Titillium Web', sans-serif;
-  font-family: 'hudson-regular', sans-serif;
+  // font-family: 'HudsonNY';
+  font-family: 'Titillium Web', sans-serif;
+  // font-family: 'hudson-regular', sans-serif;
 }
 
 .container {
@@ -43,6 +44,7 @@ body {
   margin: 0 auto;
 }
 h2 {
+  font-family: 'HudsonNY';
   font-weight: 900;
   font-size: 48px;
   line-height: 41.57px;
@@ -86,6 +88,7 @@ h2 {
     flex-wrap: wrap;
     margin-bottom: 80px;
     h4 {
+      font-family: 'HudsonNY';
       font-weight: 700;
       font-size: 20px;
       line-height: 30px;
@@ -313,6 +316,7 @@ h2 {
     display: block;
   }
   h2 {
+    font-family: 'HudsonNY';
     text-align: center;
     margin-bottom: 56px;
   }
@@ -399,6 +403,7 @@ h2 {
     margin-bottom: 62px;
   }
   h4 {
+    font-family: 'HudsonNY';
     margin-bottom: 32px;
     font-weight: bold;
     font-size: 20px;
@@ -505,6 +510,7 @@ h2 {
     letter-spacing: 0.01em;
     color: #000;
     margin-bottom: 12px;
+    font-family: 'HudsonNY';
   }
   &__inner {
     display: flex;
@@ -560,6 +566,7 @@ h2 {
     padding: 0 60px;
     width: 100%;
     h4 {
+      font-family: 'HudsonNY';
       margin-bottom: 23px;
     }
   }
