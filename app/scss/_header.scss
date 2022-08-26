@@ -40,6 +40,7 @@
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.4px;
+    font-family: 'HudsonNY';
     &:hover {
       text-decoration: underline;
     }
@@ -69,6 +70,10 @@
   }
   a {
     transition: all 0.4s;
+    img {
+      width: 24px;
+      height: 24px;
+    }
     &:hover {
       transform: scale(1.2);
     }

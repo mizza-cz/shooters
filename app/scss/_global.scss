@@ -52,12 +52,15 @@ h2 {
 }
 // statistiky
 .statistiky {
-  padding: 120px 0;
+  padding: 120px 0 60px;
   background-color: $black;
   color: #fff;
+  &-1 {
+    padding-top: 160px;
+  }
   &__posts {
     .posts {
-      margin-bottom: 80px;
+      margin-bottom: 40px;
     }
   }
   &__table {
@@ -355,7 +358,6 @@ h2 {
 .about {
   padding-top: 120px;
   background-color: $light;
-  margin-bottom: 120px;
   &__footer {
     font-weight: 900;
     font-size: 128px;
@@ -487,6 +489,9 @@ h2 {
 
 // contacts
 .contacts {
+  background-color: #000;
+  padding-top: 120px;
+  color: #fff;
   &__logo {
     display: block;
     width: 330px;
@@ -508,7 +513,7 @@ h2 {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.01em;
-    color: #000;
+    color: #fff;
     margin-bottom: 12px;
     font-family: 'HudsonNY';
   }
