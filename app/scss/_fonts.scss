@@ -1,8 +1,10 @@
 @font-face {
   font-family: 'HudsonNY';
 
-  src: url('../fonts/HudsonNY-Serif.woff2') format('woff2'),
-    url('../fonts/HudsonNY-Serif.woff') format('woff');
+  src: url('../fonts/HudsonNYPro-Bold.woff2') format('woff2'),
+    url('../fonts/HudsonNYPro-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  font-weight: 700;
 }
