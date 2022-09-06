@@ -81,8 +81,9 @@
   margin: 0 auto;
 }
 .jquery-background-video {
-  object-fit: unset;
-  height: unset;
+  object-fit: cover;
+  object-position: bottom;
+  height: 100%;
   max-width: none;
   width: 100%;
 }
