@@ -361,12 +361,13 @@ h2 {
   &__footer {
     font-weight: 900;
     font-size: 128px;
-    line-height: 78%;
+    line-height: 83%;
     text-transform: uppercase;
     display: flex;
     max-width: 1082px;
     margin-left: 68px;
     justify-content: space-between;
+    font-family: 'HudsonNY';
     span {
       color: $accent;
       display: block;
