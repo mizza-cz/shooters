@@ -26,6 +26,7 @@
   }
   .contacts {
     padding-top: 40px;
+    padding-bottom: 20px;
   }
   .posts {
     margin-bottom: 80px;
@@ -87,7 +88,6 @@
     flex-wrap: wrap;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 80px;
   }
   .contacts__info-box:first-child {
     margin-bottom: 40px;
@@ -230,6 +230,9 @@
   .contacts__info-box {
     max-width: 100%;
     flex: 100%;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   .post {
     max-width: 100%;
